@@ -1,0 +1,17 @@
+Git commands:
+git status                                                                      //status
+git diff app.js                                                                 //differences of that particular file
+git branch                                                                      //current branch
+git branch -a                                                                   //lists all branches
+git remote -v                                                                   //shows the push and pull url
+git remote set-url --push origin git@github.paypal.com:amohideen/Armor.git      //change the push url alone
+git checkout app.js                                                             //discards the changes of that particular file
+git add helper_functions.js                                                     //add to commit
+git add routes/getMMTargets.js routes/validateJira.js                           //multiple adds
+git commit -m "any comment"                                                     //commit
+git fetch                                                                       //fetch
+git pull origin master                                                          //pull
+git push origin master                                                          //push
+git log                                                                         //history
+vim .git/config                                                                 //config file
+git revert {commit_id}                                                          //revert, this cmd is followed by a commit
