@@ -3,6 +3,7 @@ git status                                                                      
 git diff app.js                                                                 //differences of that particular file
 git branch                                                                      //current branch
 git branch -a                                                                   //lists all branches
+git checkout otherBranch                                                        //switch to otherBranch
 git remote -v                                                                   //shows the push and pull url
 git remote set-url --push origin git@github.paypal.com:amohideen/Armor.git      //change the push url alone
 git remote set-url origin git@github.paypal.com:amohideen/Armor.git             //changes both push and pull url
