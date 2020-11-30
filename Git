@@ -5,8 +5,8 @@ git branch                                                                      
 git branch -a                                                                   //lists all branches
 git checkout otherBranch                                                        //switch to otherBranch
 git remote -v                                                                   //shows the push and pull url
-git remote set-url --push origin git@github.paypal.com:amohideen/Armor.git      //change the push url alone
-git remote set-url origin git@github.paypal.com:amohideen/Armor.git             //changes both push and pull url
+git remote set-url --push origin git@github.com:amohideen/Armor.git             //change the push url alone
+git remote set-url origin git@github.com:amohideen/Armor.git                    //changes both push and pull url
 git checkout app.js                                                             //discards the changes of that particular file
 git add helper_functions.js                                                     //add to commit
 git add routes/getMMTargets.js routes/validateJira.js                           //multiple adds
