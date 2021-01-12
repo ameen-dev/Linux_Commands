@@ -17,3 +17,28 @@ git push origin master                                                          
 git log                                                                         //history
 vim .git/config                                                                 //config file
 git revert {commit_id}                                                          //revert, this cmd is followed by a commit
+
+
+origin - fetch and push url - amohideen redshift
+upstream - fetch and push url - paypal redshift
+
+
+New requirement steps:
+Modifications shud be removed/commited in current branch
+git checkout -b feature/name upstream/master	(*standard)		==> code in new branch will be latest from paypal master
+Make necessary changes
+git add
+git commit
+git rebase upstream/master										==> for (*) because Sree's changes would have gone into paypal 																		redshift. In order to pull them, we do this step. Which 																		branch we cloned, we have to rebase that branch.
+fix conflicts if any and add and commit
+git push origin feature/name
+raise pr in feature/name branch to upstream/master
+
+
+[	
+	git checkout -b feature/name								==> -b needed only for new branch
+	git checkout -b bug/name									==> code in new branch will be latest from previous branch
+	git checkout -b bug/name origin/master						==> code in new branch will be latest from local master		
+	git checkout -b bug/name feature/name2						==> code in new branch will be latest from feature2
+	The last case is not recommended coz in agile all stories should be independant of each other, whereas in this case only when feature1 is committed into upstream/master, we wud be able to proceed with committing feature2
+]
