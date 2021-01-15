@@ -42,3 +42,15 @@ raise pr in feature/name branch to upstream/master
 	git checkout -b bug/name feature/name2						==> code in new branch will be latest from feature2
 	The last case is not recommended coz in agile all stories should be independant of each other, whereas in this case only when feature1 is committed into upstream/master, we wud be able to proceed with committing feature2
 ]
+
+
+clone ameen redshift
+git remote set-url origin https://github.paypal.com/amohideen/redshift.git
+git remote add paypal https://github.paypal.com/PPMS-R/redshift.git
+git remote -v
+git fetch paypal
+git checkout -b 'feature/mail1' paypal/master
+git add
+git commit
+git rebase paypal/master
+git push origin feature/mail1
