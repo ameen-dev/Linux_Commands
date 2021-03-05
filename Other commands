@@ -4,3 +4,5 @@ kill -9 pid                                                       kills the proc
 kill -9 $(lsof -t -i:8080)                                        kills the process using the particular port
 tail -f /path/to/log | grep --line-buffered 'X' | grep -v 'Y'     greps with filter including X and excluding Y
 zip -r temp.zip Documents                                         zip
+sftp sreradhakrishnan@dropzone.paypalinc.com                      login to dropzone
+put <filename>                                                    upload to dropzone
