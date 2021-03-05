@@ -3,3 +3,4 @@ lsof -i :25                                                       find the pid u
 kill -9 pid                                                       kills the process
 kill -9 $(lsof -t -i:8080)                                        kills the process using the particular port
 tail -f /path/to/log | grep --line-buffered 'X' | grep -v 'Y'     greps with filter including X and excluding Y
+zip -r temp.zip Documents                                         zip
