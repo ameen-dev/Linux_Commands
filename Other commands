@@ -6,3 +6,6 @@ tail -f /path/to/log | grep --line-buffered 'X' | grep -v 'Y'     greps with fil
 zip -r temp.zip Documents                                         zip
 sftp sreradhakrishnan@dropzone.paypalinc.com                      login to dropzone
 put <filename>                                                    upload to dropzone
+vim ~/.bash_profile                                               opens
+export JAVA_HOME="$(/usr/libexec/java_home)"                      in bashprofile will set JAVA_HOME automatically
+echo $JAVA_HOME                                                   =>/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home => to confirm
