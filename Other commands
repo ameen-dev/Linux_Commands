@@ -9,3 +9,5 @@ put <filename>                                                    upload to drop
 vim ~/.bash_profile                                               opens
 export JAVA_HOME="$(/usr/libexec/java_home)"                      in bashprofile will set JAVA_HOME automatically
 echo $JAVA_HOME                                                   =>/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home => to confirm
+/usr/libexec/java_home -v 1.8                                     figure out where is your Java 1.8 home directory
+/usr/libexec/java_home                                            figure out where is your most recent version of Java home directory
