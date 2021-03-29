@@ -17,3 +17,10 @@ Sample output:
 3.8G	/var/log
 3.5M	/var/log/rsflows
 1.7M	/var/log/nginx
+nslookup dcg13retools8238.dcg13.slc.paypalinc.com                 find IP of a VIP
+Sample output:
+Server:		10.239.105.20
+Address:	10.239.105.20#53
+
+Name:	dcg13retools8238.dcg13.slc.paypalinc.com
+Address: 10.53.71.227
