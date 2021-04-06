@@ -24,3 +24,4 @@ Address:	10.239.105.20#53
 
 Name:	dcg13retools8238.dcg13.slc.paypalinc.com
 Address: 10.53.71.227
+du -a | sort -n -r | head -n 10                                   Top 10 Files
